@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penetration Tester Dashboard</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e1e2f;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #27293d;
+            padding: 1rem 2rem;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 2rem;
+        }
+
+        .container {
+            margin: 2rem auto;
+            padding: 2rem;
+            max-width: 1200px;
+            background: #33334a;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .tool-card {
+            background: #444466;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease;
+        }
+
+        .tool-card:hover {
+            transform: scale(1.05);
+        }
+
+        .tool-card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .tool-card p {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .tool-card button {
+            padding: 0.7rem 1.5rem;
+            font-size: 1rem;
+            border: none;
+            background: #5a5acd;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+
+        .tool-card button:hover {
+            background: #7373e6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Penetration Tester Dashboard</h1>
+    </header>
+
+    <div class="container">
+        <div class="tool-card">
+            <h2>Port Scanner</h2>
+            <p>Perform a port scan on a target to identify open ports and services.</p>
+            <button>Launch Port Scanner</button>
+        </div>
+
+        <div class="tool-card">
+            <h2>Vulnerability Scanner</h2>
+            <p>Scan a target system for known vulnerabilities and security flaws.</p>
+            <button>Launch Vulnerability Scanner</button>
+        </div>
+
+        <div class="tool-card">
+            <h2>Generate Report</h2>
+            <p>Generate a detailed penetration testing report with your findings.</p>
+            <button>Generate Report</button>
+        </div>
+    </div>
+</body>
+</html>
